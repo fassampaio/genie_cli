@@ -9,5 +9,44 @@ testbed:
       password: cisco
 
 devices:
+  SITE_A_CORE:
+    connections:
+      defaults:
+        class: unicon.Unicon
+      cli:
+        ip: 192.168.126.51
+        protocol: ssh
+    os: ios
+    type: router
+  
+  SITE_A_EDGE:
+    connections:
+      defaults:
+        class: unicon.Unicon
+      cli:
+        ip: 192.168.126.52
+        protocol: ssh
+    os: ios
+    type: router
+  
+  SITE_B_EDGE:
+    connections:
+      defaults:
+        class: unicon.Unicon
+      cli:
+        ip: 192.168.126.53
+        protocol: ssh
+    os: ios
+    type: router
 
+  SITE_B_CORE:
+    connections:
+      defaults:
+        class: unicon.Unicon
+      cli:
+        ip: 192.168.126.54
+        protocol: ssh
+    os: ios
+    type: router
+    
 ...
