@@ -1,0 +1,13 @@
+---
+testbed:
+  name: Genie CLI
+  credentials:
+    default:
+      username: admin
+      password: cisco
+    enable:
+      password: cisco
+
+devices:
+
+...
